@@ -4,13 +4,23 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import RootLayout from './layout/RootLayout'
 import NotFound from './pages/NotFound'
 import Home from './pages/Home'
+import Map from './pages/Map'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
     errorElement: <NotFound />,
-    children: [{ index: true, element: <Home /> }],
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: 'map',
+        element: <Map />,
+      },
+    ],
   },
 ])
 
