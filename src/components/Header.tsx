@@ -119,9 +119,11 @@ export function Header() {
               <DrawerItem icon={<Star size={18} />} title="내 리뷰" onClick={close} />
             </ul>
 
-            <div className="border-t px-4 py-3">
-              <DrawerItem icon={<Settings size={18} />} title="설정" onClick={close} />
-              <DrawerItem icon={<LogOut size={18} />} title="로그아웃" onClick={close} />
+            <div className="border-t !border-[#E5E7EB]">
+              <ul className="flex flex-col gap-2 p-4">
+                <DrawerItem icon={<Settings size={18} />} title="설정" onClick={close} />
+                <DrawerItem icon={<LogOut size={18} />} title="로그아웃" onClick={close} />
+              </ul>
             </div>
 
             <div className="mt-auto border-t !border-[#E5E7EB] px-4 py-4 text-center !font-regular !text-[11px] !text-gray-400">
