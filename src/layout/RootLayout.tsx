@@ -5,7 +5,7 @@ export default function RootLayout() {
   return (
     <div className="min-h-dvh safe-area">
       <Header />
-      <main className="pt-20">
+      <main className="pt-14">
         <Outlet />
       </main>
     </div>
