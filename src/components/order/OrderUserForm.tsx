@@ -1,6 +1,6 @@
 export default function OrderUserForm() {
   return (
-    <section className="mb-6 border-b border-[var(--color-main-pink-30)] pb-6">
+    <section className="max-w-lg mx-auto mb-6 border-b border-[var(--color-main-pink-30)] pb-6">
       <span className="block pb-3 text-[17px] font-semibold text-[#364153]">주문자 정보</span>
 
       <div className="space-y-4">

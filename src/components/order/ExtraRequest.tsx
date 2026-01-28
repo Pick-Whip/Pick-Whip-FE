@@ -1,6 +1,6 @@
 export default function ExtraRequest() {
   return (
-    <section className="mb-4">
+    <section className="max-w-lg mx-auto mb-4">
       <span className="block pb-3 text-[17px] font-semibold text-[#364153]">추가 요청사항</span>
 
       <textarea

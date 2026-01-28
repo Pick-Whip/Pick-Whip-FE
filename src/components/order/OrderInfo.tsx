@@ -13,7 +13,6 @@ const dummyOrderProduct: OrderProduct = {
     { label: '디자인', value: '1호 원형' },
     { label: '맛', value: '초코 시트 + 생크림' },
     { label: '레터링', value: '메리 크리스마스' },
-    { label: '정렬', value: '가운데 정렬 + 1번' },
     { label: '데코', value: '오레오' },
     { label: '추가요청', value: '크리스마스 토퍼' },
   ],
@@ -23,7 +22,7 @@ export default function OrderInfo() {
   const order = dummyOrderProduct
 
   return (
-    <section className="pt-4 mb-6 border-b border-[var(--color-main-pink-30)] pb-6">
+    <section className="max-w-lg mx-auto pt-4 mb-6 border-b border-[var(--color-main-pink-30)] pb-6">
       <span className="block pb-3 text-[17px] font-semibold text-[#364153]">주문 상품</span>
 
       <div className="flex gap-6">
