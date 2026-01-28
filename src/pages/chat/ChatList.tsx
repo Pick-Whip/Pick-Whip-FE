@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ArrowLeftIcon from '../../assets/chat-icon/arrow-left.svg?react'
 import ChatListItem from '../../components/chat/ChatListItem'
-import { SearchInput } from '../../components/SearchInput'
+import { SearchInput } from '@/components/input/SearchInput'
 
 interface ChatPreview {
   id: string
