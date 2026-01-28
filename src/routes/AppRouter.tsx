@@ -15,6 +15,8 @@ import Customize from '@/pages/customize/Customize'
 import ChatList from '@/pages/chat/ChatList'
 import ChatRoom from '@/pages/chat/ChatRoom'
 import OrderDetailPage from '@/pages/OrderDetailPage'
+import SettingsPage from '@/pages/SettingsPage'
+import EditMyInfoPage from '@/pages/EditMyInfoPage'
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
     path: '/orders',
     element: <BlankLayout />,
     children: [{ path: ':orderId', element: <OrderSheet /> }],
+  },
+  {
+    path: '/setting',
+    element: <BlankLayout />,
+    children: [
+      { index: true, element: <SettingsPage /> },
+      { path: 'edit-my-info', element: <EditMyInfoPage /> },
+    ],
   },
 ])
 
